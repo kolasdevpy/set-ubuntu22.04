@@ -11,7 +11,6 @@ set -euo pipefail
 # sudo ./setup_docker.sh
 # ============================================================
 
-# DOCKER
 # Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl
