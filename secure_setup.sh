@@ -55,9 +55,13 @@ KbdInteractiveAuthentication no
 PubkeyAuthentication yes
 EOF
 
+# 🔧 Ubuntu 24.04 fix: ensure privilege separation directory exists
+mkdir -p /run/sshd
+chmod 755 /run/sshd
+
 # Validate configuration syntax before applying
 if ! sshd -t; then
-    echo "❌ SSH configuration contains syntax errors. Rolling back changes..."
+    echo "❌ SSH configuration test failed. Rolling back changes..."
     rm -f "$SSH_DROPIN"
     exit 1
 fi
@@ -65,6 +69,3 @@ fi
 # Reload instead of restart to avoid dropping active sessions
 systemctl reload ssh
 echo "✅ SSH reconfigured successfully. Drop-in file: $SSH_DROPIN"
-
-echo -e "\n🎉 Hardening complete."
-echo "🔍 Please verify your SSH connection from VSCode/terminal before closing this session."
