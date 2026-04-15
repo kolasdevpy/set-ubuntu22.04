@@ -88,6 +88,6 @@ fi
 
 echo -e "\n${GREEN}✅ Setup complete.${NC}"
 echo "🔹 Login: ssh $USERNAME@<server_ip>"
-echo "🔹 Docker: docker ps (без sudo, если группа добавлена)"
-echo "🔹 System: sudo apt/systemctl (по-прежнему требует прав)"
-echo -e "💡 Для временной root-сессии: ${YELLOW}sudo -i${NC}"
+echo "🔹 Docker: docker (without sudo)"
+echo "🔹 System: sudo apt/systemctl (requare sudo)"
+echo -e "💡 Temp root-сессии: ${YELLOW}sudo -i${NC}"
