@@ -70,7 +70,6 @@ fi
 if ! getent group docker &>/dev/null; then
     warn "Docker is not installed yet. After installation, run:"
     warn "  sudo usermod -aG docker $USERNAME"
-    warn "Then re-login or restart VSCode."
 fi
 
 echo -e "\n${GREEN}✅ Setup complete.${NC}"
