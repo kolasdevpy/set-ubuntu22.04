@@ -46,7 +46,7 @@ cat > "$SSH_DROPIN" <<EOF
 Port ${SSH_PORT}
 
 # Disable root login and password authentication
-PermitRootLogin no
+PermitRootLogin prohibit-password
 PasswordAuthentication no
 ChallengeResponseAuthentication no
 KbdInteractiveAuthentication no
