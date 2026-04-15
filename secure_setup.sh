@@ -8,7 +8,7 @@ set -euo pipefail
 # Default key path: /root/.ssh/authorized_keys
 
 # SETUP
-# wget https://raw.githubusercontent.com/.../secure_server_setup.sh   # или создайте файл вручную
+# wget https://github.com/kolasdevpy/set-ubuntu22.04/blob/main/secure_setup.sh
 # chmod +x secure_server_setup.sh
 # sudo ./secure_server_setup.sh
 # ============================================================
