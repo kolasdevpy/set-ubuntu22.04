@@ -3,11 +3,11 @@ set -euo pipefail
 
 # ============================================================
 # CREATE USER SCRIPT FOR UBUNTU 24.04
+# Usage: sudo ./create_user.sh [username] [uid] [nopasswd]
 
 # wget https://raw.githubusercontent.com/kolasdevpy/set-ubuntu22.04/main/create_user.sh
 # chmod +x create_user.sh
-# Usage: sudo ./create_user.sh [username] [uid] [nopasswd]
-# Example: sudo ./create_user.sh admin 1000 true
+# sudo ./create_user.sh admin 1000 true
 # ============================================================
 
 # 🎨 Colors
