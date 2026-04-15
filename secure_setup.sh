@@ -8,7 +8,7 @@ set -euo pipefail
 # Default key path: /root/.ssh/authorized_keys
 
 # SETUP
-# wget https://github.com/kolasdevpy/set-ubuntu22.04/blob/main/secure_setup.sh
+# wget https://raw.githubusercontent.com/kolasdevpy/set-ubuntu22.04/main/secure_setup.sh
 # chmod +x secure_setup.sh
 # sudo ./secure_setup.sh
 # ============================================================
@@ -119,7 +119,7 @@ systemctl restart ssh
 log "Waiting 5 seconds for SSH to stabilize..."
 sleep 5
 log "Verifying that user $NEW_USER can log in via SSH key..."
-if ssh -o ConnectTimeout=5 -o BatchMode=yes -o PasswordAuthentication=no -p "$SSH_PORT" "$NEW_USER@localhost" exit; then
+if ssh -o ConnectTimeout=5 -o BatchMode=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PasswordAuthentication=no -p "$SSH_PORT" "$NEW_USER@localhost" exit; then
     log "Login successful for $NEW_USER using SSH key."
 else
     error "Failed to log in as $NEW_USER via SSH key. Rolling back SSH changes."
