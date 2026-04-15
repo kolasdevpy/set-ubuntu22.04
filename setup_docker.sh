@@ -4,11 +4,11 @@ set -euo pipefail
 # ============================================================
 # DOCKER ENGINE SETUP FOR UBUNTU 24.04
 # Installs: Docker CE, Buildx, Compose plugin
+# Usage: sudo ./setup_docker.sh [username]
 
 # wget https://raw.githubusercontent.com/kolasdevpy/set-ubuntu22.04/main/setup_docker.sh
 # chmod +x setup_docker.sh
-# Usage: sudo ./setup_docker.sh [username]
-# Example: sudo ./setup_docker.sh admin
+# sudo ./setup_docker.sh admin
 # ============================================================
 
 # 🎨 Colors
