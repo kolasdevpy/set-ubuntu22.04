@@ -1,3 +1,5 @@
+sudo timedatectl set-timezone Europe/Moscow
+
 create_user.sh   
 secure_setup.sh   
 reboot   
