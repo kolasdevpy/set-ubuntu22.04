@@ -2,7 +2,7 @@
 set -e
 
 # rm -f secure_setup.sh
-# wget https://raw.githubusercontent.com/kolasdevpy/set-ubuntu22.04/main/inst-tools-py31213-docker.sh
+# wget https://raw.githubusercontent.com/kolasdevpy/set-ubuntu24.04/main/inst-tools-py31213-docker.sh
 # chmod +x inst-tools-py31213-docker.sh
 # ./inst-tools-py31213-docker.sh
 
