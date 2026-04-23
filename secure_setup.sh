@@ -6,7 +6,7 @@ set -euo pipefail
 # Secure Ubuntu 24.04 Server Setup Script
 
 # SETUP
-# wget https://raw.githubusercontent.com/kolasdevpy/set-ubuntu22.04/main/secure_setup.sh
+# wget https://raw.githubusercontent.com/kolasdevpy/set-ubuntu24.04/main/secure_setup.sh
 # chmod +x secure_setup.sh
 # sudo ./secure_setup.sh
 # ============================================================
